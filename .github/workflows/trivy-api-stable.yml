@@ -3,16 +3,16 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: build
+name: Trivy Scan API Stable
 
 on:
   push:
     branches: [ "stable" ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "stable" ]
+    paths:
+        - 'api/**'
+        - '.github/workflows/trivy-api-stable.yml'
   schedule:
-    - cron: '19 22 * * 2'
+    - cron: '0 12 * * 2'
 
 permissions:
   contents: read
