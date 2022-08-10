@@ -3,14 +3,14 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Trivy Scan API Stable
+name: Trivy Scan Geoprocess Stable
 
 on:
   push:
     branches: [ "stable" ]
     paths:
-      - 'api/**'
-      - '.github/workflows/trivy-api-stable.yml'
+      - 'async_geoprocess/**'
+      - '.github/workflows/trivy-geoprocess-stable.yml'
   schedule:
     - cron: '0 12 * * 2'
 
